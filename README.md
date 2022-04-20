@@ -18,7 +18,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: Live
+- Live Site URL: [Click Here](https://2725efeb.fm-social-db.pages.dev/)
 
 ### Built with
 
