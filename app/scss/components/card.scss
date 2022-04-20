@@ -1,0 +1,114 @@
+@use "../util" as *;
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  grid-gap: rem(30);
+}
+
+.card-design {
+  padding: rem(25);
+  text-align: center;
+  background: var(--cardbg);
+  border-radius: rem(5);
+  color: var(--text1);
+}
+
+.card-design:hover {
+  background-color: var(--card-hover);
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  &--one {
+    border-top: rem(4) solid var(--facebook);
+  }
+
+  &--two {
+    border-top: rem(4) solid var(--twitter);
+  }
+
+  &--three {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: rem(4);
+      width: 100%;
+      background: linear-gradient(
+        255deg,
+        var(--instagram-end) 0%,
+        var(--instagram-middle) 50.91%,
+        var(--instagram-start) 100%
+      );
+    }
+  }
+
+  &--four {
+    border-top: rem(4) solid var(--youtube);
+  }
+
+  &__handles {
+    display: flex;
+    place-content: center;
+    align-items: center;
+
+    &__img {
+      margin-right: rem(8);
+    }
+
+    &__uname {
+      font-size: rem(12);
+      font-weight: bold;
+    }
+  }
+
+  &__count {
+    margin: rem(28) 0 rem(25) 0;
+
+    &__heading {
+      font-size: rem(56);
+      color: var(--text2);
+      letter-spacing: rem(-2);
+      line-height: 1;
+      margin-bottom: rem(3);
+    }
+
+    &__text {
+      font-size: rem(12);
+      font-weight: normal;
+      letter-spacing: rem(5);
+      text-transform: uppercase;
+    }
+  }
+
+  &__change {
+    display: flex;
+    place-content: center;
+    align-items: center;
+    font-size: rem(12);
+    font-weight: bold;
+    color: var(--lime-green);
+
+    &__arrow {
+      margin-right: rem(4);
+    }
+
+    &__textred {
+      color: var(--bright-red);
+    }
+  }
+
+  &--baseline {
+    align-self: baseline;
+  }
+}

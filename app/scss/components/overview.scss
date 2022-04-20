@@ -1,0 +1,35 @@
+@use "../util" as *;
+
+.stat--heading {
+  color: var(--text-heading);
+}
+
+.overview {
+  &__views {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+
+    &--text {
+      font-size: rem(14);
+    }
+  }
+
+  &__arrnum {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+
+    &--vnum {
+      font-size: rem(25);
+      color: var(--text2);
+      align-self: baseline;
+      margin-top: rem(23);
+    }
+
+    img {
+      margin-right: rem(4);
+    }
+  }
+}

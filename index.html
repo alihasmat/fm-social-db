@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/dist/style.css" />
+    <script defer src="/dist/script.js"></script>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header__title">
+        <h1>Social Media Dashboard</h1>
+        <span class="header__subtitle">Total Followers: 23,004</span>
+      </div>
+
+      <div class="horizontal-line"></div>
+
+      <fieldset
+        class="header__toggle toggle"
+        aria-label="theme switcher"
+        role="radiogroup"
+      >
+        <label for="dark" class="dark-mode">Dark mode</label>
+        <div class="toggle__wrapper">
+          <input type="checkbox" name="theme" class="btn" />
+          <!-- <input type="radio" name="theme" id="systempref" /> -->
+          <!-- <input type="radio" class="light--hidden" name="theme" id="light" /> -->
+          <!-- <span aria-hidden="true" class="toggle__background"></span> -->
+          <!-- <span aria-hidden="true" class="toggle__switcher"></span> -->
+        </div>
+        <!-- <label for="systempref">System Pref</label> -->
+        <!-- <label for="light">Light Mode</label> -->
+      </fieldset>
+    </header>
+
+    <main>
+      <section class="container card-container">
+        <div class="card-design card card--one">
+          <div class="card__handles">
+            <img
+              class="card__handles__img"
+              src="images/icon-facebook.svg"
+              alt="facebook icon"
+            />
+            <span class="card__handles__uname">@nathanf</span>
+          </div>
+
+          <div class="card__count">
+            <h2 class="card__count__heading">1987</h2>
+            <span class="card__count__text">Followers</span>
+          </div>
+
+          <div class="card__change">
+            <img
+              class="card__change__arrow"
+              src="images/icon-up.svg"
+              alt="arrow up"
+            />
+            <span>12 Today</span>
+          </div>
+        </div>
+        <!--card one-->
+
+        <div class="card-design card card--two">
+          <div class="card__handles">
+            <img
+              class="card__handles__img"
+              src="images/icon-twitter.svg"
+              alt="facebook icon"
+            />
+            <span class="card__handles__uname">@nathanf</span>
+          </div>
+
+          <div class="card__count">
+            <h2 class="card__count__heading">1044</h2>
+            <span class="card__count__text">Followers</span>
+          </div>
+
+          <div class="card__change">
+            <img
+              class="card__change__arrow"
+              src="images/icon-up.svg"
+              alt="arrow up"
+            />
+            <span>99 Today</span>
+          </div>
+        </div>
+        <!--card two-->
+
+        <div class="card-design card card--three">
+          <div class="card__handles">
+            <img
+              class="card__handles__img"
+              src="images/icon-instagram.svg"
+              alt="instagram icon"
+            />
+            <span class="card__handles__uname">@realnathanf</span>
+          </div>
+
+          <div class="card__count">
+            <h2 class="card__count__heading">11K</h2>
+            <span class="card__count__text">Followers</span>
+          </div>
+
+          <div class="card__change">
+            <img
+              class="card__change__arrow"
+              src="images/icon-up.svg"
+              alt="arrow up"
+            />
+            <span>1099 Today</span>
+          </div>
+        </div>
+        <!--card three-->
+
+        <div class="card-design card card--four">
+          <div class="card__handles">
+            <img
+              class="card__handles__img"
+              src="images/icon-youtube.svg"
+              alt="youtube icon"
+            />
+            <span class="card__handles__uname">@Nathan F.</span>
+          </div>
+
+          <div class="card__count">
+            <h2 class="card__count__heading">8239</h2>
+            <span class="card__count__text">Subscribers</span>
+          </div>
+
+          <div class="card__change">
+            <img
+              class="card__change__arrow"
+              src="images/icon-down.svg"
+              alt="arrow down"
+            />
+            <span class="card__change__textred">144 Today</span>
+          </div>
+        </div>
+        <!--card four-->
+      </section>
+      <!-- end of card container -->
+
+      <section class="container">
+        <h2 class="stat--heading">Overview - Today</h2>
+        <div class="card-container">
+          <div class="card-design overview">
+            <div class="overview__views">
+              <div class="overview__views--text">Page Views</div>
+              <img
+                class="overview__views--icon"
+                src="images/icon-facebook.svg"
+                alt="facebook icon"
+              />
+            </div>
+            <!-- end of views -->
+            <div class="overview__arrnum">
+              <div class="overview__arrnum--vnum">87</div>
+              <div class="card__change card--baseline">
+                <img src="images/icon-up.svg" alt="arrow up" />
+                <span>3%</span>
+              </div>
+            </div>
+            <!-- end of arrnum -->
+          </div>
+          <!-- end of overview one-->
+
+          <div class="card-design overview">
+            <div class="overview__views">
+              <div class="overview__views--text">Likes</div>
+              <img
+                class="overview__views--icon"
+                src="images/icon-facebook.svg"
+                alt="facebook icon"
+              />
+            </div>
+            <!-- end of views -->
+            <div class="overview__arrnum">
+              <div class="overview__arrnum--vnum">52</div>
+              <div class="card__change card--baseline">
+                <img src="images/icon-down.svg" alt="arrow down" />
+                <span class="card__change__textred">2%</span>
+              </div>
+            </div>
+            <!-- end of arrnum -->
+          </div>
+          <!-- end of overview two-->
+
+          <div class="card-design overview">
+            <div class="overview__views">
+              <div class="overview__views--text">Likes</div>
+              <img
+                class="overview__views--icon"
+                src="images/icon-instagram.svg"
+                alt="instagram icon"
+              />
+            </div>
+            <!-- end of views -->
+            <div class="overview__arrnum">
+              <div class="overview__arrnum--vnum">5462</div>
+              <div class="card__change card--baseline">
+                <img src="images/icon-up.svg" alt="arrow up" />
+                <span>2257%</span>
+              </div>
+            </div>
+            <!-- end of arrnum -->
+          </div>
+          <!-- end of overview three-->
+
+          <div class="card-design overview">
+            <div class="overview__views">
+              <div class="overview__views--text">Profile Views</div>
+              <img
+                class="overview__views--icon"
+                src="images/icon-instagram.svg"
+                alt="instagram icon"
+              />
+            </div>
+            <!-- end of views -->
+            <div class="overview__arrnum">
+              <div class="overview__arrnum--vnum">52K</div>
+              <div class="card__change card--baseline">
+                <img src="images/icon-up.svg" alt="arrow up" />
+                <span>1375%</span>
+              </div>
+            </div>
+            <!-- end of arrnum -->
+          </div>
+          <!-- end of overview four-->
+
+          <div class="card-design overview">
+            <div class="overview__views">
+              <div class="overview__views--text">Retweets</div>
+              <img
+                class="overview__views--icon"
+                src="images/icon-twitter.svg"
+                alt="twitter icon"
+              />
+            </div>
+            <!-- end of views -->
+            <div class="overview__arrnum">
+              <div class="overview__arrnum--vnum">303</div>
+              <div class="card__change card--baseline">
+                <img src="images/icon-up.svg" alt="arrow up" />
+                <span>303%</span>
+              </div>
+            </div>
+            <!-- end of arrnum -->
+          </div>
+          <!-- end of overview five-->
+
+          <div class="card-design overview">
+            <div class="overview__views">
+              <div class="overview__views--text">Likes</div>
+              <img
+                class="overview__views--icon"
+                src="images/icon-twitter.svg"
+                alt="twitter icon"
+              />
+            </div>
+            <!-- end of views -->
+            <div class="overview__arrnum">
+              <div class="overview__arrnum--vnum">507</div>
+              <div class="card__change card--baseline">
+                <img src="images/icon-up.svg" alt="arrow up" />
+                <span>553%</span>
+              </div>
+            </div>
+            <!-- end of arrnum -->
+          </div>
+          <!-- end of overview six-->
+
+          <div class="card-design overview">
+            <div class="overview__views">
+              <div class="overview__views--text">Likes</div>
+              <img
+                class="overview__views--icon"
+                src="images/icon-youtube.svg"
+                alt="youtube icon"
+              />
+            </div>
+            <!-- end of views -->
+            <div class="overview__arrnum">
+              <div class="overview__arrnum--vnum">107</div>
+              <div class="card__change card--baseline">
+                <img src="images/icon-down.svg" alt="arrow down" />
+                <span class="card__change__textred">19%</span>
+              </div>
+            </div>
+            <!-- end of arrnum -->
+          </div>
+          <!-- end of overview seven-->
+
+          <div class="card-design overview">
+            <div class="overview__views">
+              <div class="overview__views--text">Total Views</div>
+              <img
+                class="overview__views--icon"
+                src="images/icon-youtube.svg"
+                alt="youtube icon"
+              />
+            </div>
+            <!-- end of views -->
+            <div class="overview__arrnum">
+              <div class="overview__arrnum--vnum">1407</div>
+              <div class="card__change card--baseline">
+                <img src="images/icon-down.svg" alt="arrow down" />
+                <span class="card__change__textred">12%</span>
+              </div>
+            </div>
+            <!-- end of arrnum -->
+          </div>
+          <!-- end of overview eight-->
+        </div>
+        <!-- end of overview container -->
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>

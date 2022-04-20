@@ -1,0 +1,39 @@
+@use "../util" as *;
+
+.header {
+  margin-top: rem(36);
+
+  @include breakpoint(medium) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: rem(27);
+  }
+
+  &__subtitle {
+    font-size: rem(14);
+    color: var(--text1);
+    font-weight: 500;
+  }
+
+  &__toggle {
+    display: flex;
+    justify-content: space-between;
+    gap: rem(12);
+
+    @include breakpoint-down(small) {
+      padding: 30px 0;
+    }
+  }
+}
+
+@include breakpoint-down(small) {
+  .horizontal-line {
+    width: 100%;
+    height: rem(1);
+    background: var(--horizontal-line);
+  }
+}
